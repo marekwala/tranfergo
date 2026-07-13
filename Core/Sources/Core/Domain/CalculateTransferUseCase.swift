@@ -1,5 +1,5 @@
 //
-//  Untitled.swift
+//  CalculateTransferUseCaseProtocol.swift
 //  Core
 //
 //  Created by Marek Wala on 13/07/2026.
