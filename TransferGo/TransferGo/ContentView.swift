@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        /// ☕ TODO: Add Views, ViewModel, handling of error popup
+        /// ☕ TODO: Add colors and images to Assets
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)

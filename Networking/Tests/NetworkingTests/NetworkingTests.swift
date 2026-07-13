@@ -4,8 +4,8 @@ import Core
 
 final class NetworkFXRepositoryTests: XCTestCase {
     
-    private var sessionMock: URLSessionMock!
-    private var sut: NetworkFXRepository!
+    private var sessionMock: URLSessionMock! /// ☕ TODO: Add Mock
+    private var sut: NetworkFXRepository! /// ☕ TODO: Add Repository
     
     override func setUp() {
         super.setUp()
@@ -57,7 +57,7 @@ final class NetworkFXRepositoryTests: XCTestCase {
             _ = try await sut.fetchFXRate(from: "PLN", to: "EUR", amount: 100.0)
             XCTFail("Should throw serverError")
         } catch {
-            XCTAssertEqual(error as? NetworkError, NetworkError.serverError(statusCode: 500))
+            XCTAssertEqual(error as? NetworkError, NetworkError.serverError(statusCode: 500)) /// ☕ TODO: Add Error
         }
     }
 }
