@@ -28,7 +28,7 @@ final class CalculateTransferUseCaseTests: XCTestCase {
         // When
         _ = try? await sut.execute(sourceAmount: requestedAmount, sourceCurrency: pln, targetCurrency: eur)
         
-        // Than
+        // Then
         XCTAssertTrue(repositoryMock.fetchFXRateCalled)
         XCTAssertEqual(repositoryMock.passedFrom, "PLN")
         XCTAssertEqual(repositoryMock.passedTo, "EUR")
