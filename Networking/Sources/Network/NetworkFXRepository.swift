@@ -9,13 +9,13 @@ import Foundation
 import Core
 
 public final class NetworkFXRepository: FXRepository {
-        private let session: URLSessionProtocol
-        private let baseURL: String
+    private let session: URLSessionProtocol
+    private let baseURL: String
         
-        public init(session: URLSessionProtocol = URLSession.shared, baseURL: String = "https://my.transfergo.com/api/fx-rates") {
-            self.session = session
-            self.baseURL = baseURL
-        }
+    public init(session: URLSessionProtocol = URLSession.shared, baseURL: String = "https://my.transfergo.com/api/fx-rates") {
+        self.session = session
+        self.baseURL = baseURL
+    }
     
     public func fetchFXRate(from source: String, to target: String, amount: Double) async throws -> FXRateResult {
         guard var components = URLComponents(string: baseURL) else {
