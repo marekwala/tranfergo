@@ -15,15 +15,19 @@ let package = Package(
             targets: ["Networking"]
         ),
     ],
+    dependencies: [
+            .package(path: "../Core")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Networking"
+            name: "Networking",
+            dependencies: [.product(name: "Core", package: "Core")]
         ),
         .testTarget(
             name: "NetworkingTests",
-            dependencies: ["Networking"]
+            dependencies: ["Networking", .product(name: "Core", package: "Core")]
         ),
     ],
     swiftLanguageModes: [.v6]
