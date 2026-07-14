@@ -2,10 +2,28 @@ import XCTest
 @testable import Networking
 import Core
 
+final class URLSessionMock: URLSessionProtocol {
+    var stubbedData: Data?
+    var stubbedResponse: URLResponse?
+    var stubbedError: Error?
+    
+    func data(from url: URL) async throws -> (Data, URLResponse) {
+        if let error = stubbedError {
+            throw error
+        }
+        
+        let data = stubbedData ?? Data()
+        let response = stubbedResponse ?? HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)!
+        
+        return (data, response)
+    }
+}
+
+
 final class NetworkFXRepositoryTests: XCTestCase {
     
-    private var sessionMock: URLSessionMock! /// ☕ TODO: Add Mock
-    private var sut: NetworkFXRepository! /// ☕ TODO: Add Repository
+    private var sessionMock: URLSessionMock!
+    private var sut: NetworkFXRepository!
     
     override func setUp() {
         super.setUp()
@@ -57,7 +75,7 @@ final class NetworkFXRepositoryTests: XCTestCase {
             _ = try await sut.fetchFXRate(from: "PLN", to: "EUR", amount: 100.0)
             XCTFail("Should throw serverError")
         } catch {
-            XCTAssertEqual(error as? NetworkError, NetworkError.serverError(statusCode: 500)) /// ☕ TODO: Add Error
+            XCTAssertEqual(error as? NetworkError, NetworkError.serverError(statusCode: 500))
         }
     }
 }
