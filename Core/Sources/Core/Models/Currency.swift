@@ -31,10 +31,10 @@ public struct Currency: Hashable, Identifiable, Equatable, Sendable {
 
 public enum SupportedCurrencies : Sendable{
     public static let all: [Currency] = [
-        Currency(code: "PLN", name: "Poland", flagImageName: "flag_pl", limit: 20000),
-        Currency(code: "EUR", name: "Germany", flagImageName: "flag_de", limit: 5000),
-        Currency(code: "GBP", name: "Great Britain", flagImageName: "flag_gb", limit: 1000),
-        Currency(code: "UAH", name: "Ukraine", flagImageName: "flag_ua", limit: 50000)
+        Currency(code: "PLN", name: "Poland", flagImageName: "flagPoland", limit: 20000),
+        Currency(code: "EUR", name: "Germany", flagImageName: "flagGermany", limit: 5000),
+        Currency(code: "GBP", name: "Great Britain", flagImageName: "flagBritain", limit: 1000),
+        Currency(code: "UAH", name: "Ukraine", flagImageName: "flagUkraine", limit: 50000)
     ]
     
     public static func find(_ code: String) -> Currency? {
