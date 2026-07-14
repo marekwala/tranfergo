@@ -12,9 +12,9 @@ public struct Currency: Hashable, Identifiable, Equatable, Sendable {
     public let code: String
     public let name: String
     public let flagImageName: String
-    public let limit: Decimal
+    public let limit: Decimal?
     
-    public init(code: String, name: String, flagImageName: String, limit: Decimal) {
+    public init(code: String, name: String, flagImageName: String, limit: Decimal?) {
         self.code = code
         self.name = name
         self.flagImageName = flagImageName
