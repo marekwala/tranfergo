@@ -3,8 +3,8 @@ import XCTest
 @testable import Core
 
 final class CalculateTransferUseCaseTests: XCTestCase {
-    private let pln = Currency(code: "PLN", name: "Zloty", symbol: "zł")
-    private let eur = Currency(code: "EUR", name: "Euro", symbol: "€")
+    private let pln = Currency(code: "PLN", name: "Poland", flagImageName: "flag_pl", limit: 20000)
+    private let eur = Currency(code: "EUR", name: "Germany", flagImageName: "flag_de", limit: 5000)
     
     private var repositoryMock: FXRepositoryMock!
     private var sut: CalculateTransferUseCase!
