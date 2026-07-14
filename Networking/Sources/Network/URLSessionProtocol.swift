@@ -1,5 +1,5 @@
 //
-//  URLSssionProtocol.swift
+//  URLSessionProtocol.swift
 //  Networking
 //
 //  Created by Marek Wala on 14/07/2026.
