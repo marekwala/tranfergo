@@ -34,7 +34,6 @@
 		85D15D84300561CD00D3FDBB /* TransferGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D15D97300561F100D3FDBB /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = ../Core; sourceTree = SOURCE_ROOT; };
 		85D15D983005625700D3FDBB /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ../Networking; sourceTree = SOURCE_ROOT; };
-		85D15E5B300769C000D3FDBB /* TransferGo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TransferGo.xctestplan; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -90,7 +89,6 @@
 				85D15D6F300561CB00D3FDBB /* TransferGo */,
 				85D15D7D300561CD00D3FDBB /* TransferGoTests */,
 				85D15D87300561CD00D3FDBB /* TransferGoUITests */,
-				85D15D9B30059A4A00D3FDBB /* Frameworks */,
 				85D15D6E300561CB00D3FDBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,14 +101,6 @@
 				85D15D84300561CD00D3FDBB /* TransferGoUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		85D15D9B30059A4A00D3FDBB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				85D15E5B300769C000D3FDBB /* TransferGo.xctestplan */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
