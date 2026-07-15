@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "4C8AE01D-F46D-43D8-A45C-1CE3B3BFD75B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TransferGo.xcodeproj",
+      "identifier" : "85D15D6C300561CB00D3FDBB",
+      "name" : "TransferGo"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/Core",
+        "identifier" : "CoreTests",
+        "name" : "CoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/Networking",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TransferGo.xcodeproj",
+        "identifier" : "85D15D79300561CD00D3FDBB",
+        "name" : "TransferGoTests"
+      }
+    }
+  ],
+  "version" : 1
+}

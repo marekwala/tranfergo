@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../../TransferGoTests.xctestplan"
+            reference = "container:../TransferGoTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
