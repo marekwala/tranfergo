@@ -4,7 +4,4 @@
    <FileRef
       location = "container:TransferGo/TransferGo.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:../TransferGo.xctestplan">
-   </FileRef>
 </Workspace>
