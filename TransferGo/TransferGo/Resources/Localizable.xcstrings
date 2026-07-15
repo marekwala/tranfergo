@@ -1,0 +1,40 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@ • %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ • %2$@"
+          }
+        }
+      }
+    },
+    "All countries" : {
+
+    },
+    "Check your internet connection" : {
+
+    },
+    "No network" : {
+
+    },
+    "Receiver gets" : {
+
+    },
+    "Search" : {
+
+    },
+    "Sending from" : {
+
+    },
+    "Sending to" : {
+
+    }
+  },
+  "version" : "1.2"
+}
