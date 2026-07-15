@@ -17,7 +17,7 @@
 
 ### About implementation
 Contains two modules:
-* Core - Reusable business logic and data models
+* Core - business logic and data models
 * Networking - API requests
 
 Main view is TransferView and has it's own TransferViewModel. Localizable should track automaticly strings.
