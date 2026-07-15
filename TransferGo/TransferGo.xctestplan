@@ -26,14 +26,6 @@
       }
     },
     {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:TransferGo.xcodeproj",
-        "identifier" : "85D15D83300561CD00D3FDBB",
-        "name" : "TransferGoUITests"
-      }
-    },
-    {
       "target" : {
         "containerPath" : "container:..\/Core",
         "identifier" : "CoreTests",
