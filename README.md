@@ -12,7 +12,9 @@
    ```bash
    git clone [https://github.com/marekwala/tranfergo.git](https://github.com/marekwala/tranfergo.git)
    cd tranfergo
-2. **For unit tests use TransferGoTests scheme:**
+2. **Open transfergo.xcworkspace:**
+   Open with xcode: transfergo.xcworkspace
+3. **For unit tests use TransferGoTests scheme:**
 <img width="320" height="302" alt="Zrzut ekranu 2026-07-15 o 10 16 11" src="https://github.com/user-attachments/assets/fe5ec9b9-5d4d-4abd-9c72-c94d0562dee4" />
 
 ### About implementation
