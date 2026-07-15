@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		85D15D9D30059A5000D3FDBB /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 85D15D9C30059A5000D3FDBB /* Networking */; };
+		85D15D9F30059A5400D3FDBB /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 85D15D9E30059A5400D3FDBB /* Core */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		85D15D7B300561CD00D3FDBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -54,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D15D9D30059A5000D3FDBB /* Networking in Frameworks */,
+				85D15D9F30059A5400D3FDBB /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 				85D15D6F300561CB00D3FDBB /* TransferGo */,
 				85D15D7D300561CD00D3FDBB /* TransferGoTests */,
 				85D15D87300561CD00D3FDBB /* TransferGoUITests */,
+				85D15D9B30059A4A00D3FDBB /* Frameworks */,
 				85D15D6E300561CB00D3FDBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +102,13 @@
 				85D15D84300561CD00D3FDBB /* TransferGoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		85D15D9B30059A4A00D3FDBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +131,8 @@
 			);
 			name = TransferGo;
 			packageProductDependencies = (
+				85D15D9C30059A5000D3FDBB /* Networking */,
+				85D15D9E30059A5400D3FDBB /* Core */,
 			);
 			productName = TransferGo;
 			productReference = 85D15D6D300561CB00D3FDBB /* TransferGo.app */;
@@ -186,6 +203,7 @@
 					};
 					85D15D83300561CD00D3FDBB = {
 						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
 						TestTargetID = 85D15D6C300561CB00D3FDBB;
 					};
 				};
@@ -332,6 +350,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -388,6 +407,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -499,6 +519,7 @@
 		85D15D95300561CD00D3FDBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -508,6 +529,8 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,6 +541,7 @@
 		85D15D96300561CD00D3FDBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,6 +551,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -574,6 +599,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85D15D9C30059A5000D3FDBB /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		85D15D9E30059A5400D3FDBB /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85D15D65300561CB00D3FDBB /* Project object */;
 }

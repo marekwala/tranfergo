@@ -72,6 +72,7 @@ public struct TransferView: View {
                     .multilineTextAlignment(.trailing)
                     .font(.system(size: 32, weight: .bold))
                     .foregroundColor(isError ? .red : .blue)
+                    .accessibilityIdentifier("swapButton")
             }
         }
         .padding()
@@ -88,6 +89,7 @@ public struct TransferView: View {
                         .font(.system(size: 12, weight: .bold)).foregroundColor(.white)
                         .padding(8).background(Color.blue).clipShape(Circle())
                         .offset(x: 24)
+                        .accessibilityIdentifier("swapButton")
                 }
                 Spacer()
             }

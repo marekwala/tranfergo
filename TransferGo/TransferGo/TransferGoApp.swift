@@ -11,7 +11,7 @@ import SwiftUI
 struct TransferGoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TransferViewBuilder.make()
         }
     }
 }

@@ -7,7 +7,25 @@
 		<key>TransferGo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>85D15D6C300561CB00D3FDBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85D15D79300561CD00D3FDBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85D15D83300561CD00D3FDBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
